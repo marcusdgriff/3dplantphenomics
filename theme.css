@@ -2739,8 +2739,8 @@ input[type="button"].btn-block {
 A.class2 {color:blue;}
 A.class2:link {text-decoration: none; color: #3D92F1;}
 A.class2:visited {text-decoration: none; color: #3D92F1;}
-A.class2:hover {text-decoration: underline; color: white;}
-A.class2:active {text-decoration: none; color: white;}
+A.class2:hover {text-decoration: underline; color: #535E6E;}
+A.class2:active {text-decoration: none; color: #535E6E;}
 
 .badge {
   display: inline-block;

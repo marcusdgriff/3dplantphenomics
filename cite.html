@@ -16,20 +16,46 @@
     <meta name="twitter:description" content="Repository for downloadable 3D models for assisting plant research">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
-    <link href="../theme.css" rel="stylesheet">
-    <link href="../template.css" rel="stylesheet">
+    <link href="./theme.css" rel="stylesheet">
+    <link href="./template.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3c7811dab3.js" crossorigin="anonymous"></script>
   </head>
 
+  <script>
+function myFunction() {
+  var src, input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase().trim().split(' ');
+  table = document.getElementById("myTable");
+  for (j = 0; j < filter.length; j++) {
+    tr = table.getElementsByTagName("tr");
+    src = filter[j].trim();
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[1];
+      td1 = tr[i].getElementsByTagName("td")[2];
+      td2 = tr[i].getElementsByTagName("td")[3];
+      if (src!='' && td && td2) {
+        txtValue = td.textContent || td.innerText;
+        txtValue1 = td1.textContent || td1.innerText;
+        txtValue2 = td2.textContent || td2.innerText;
+        if (txtValue.toUpperCase().indexOf(src) > -1  || txtValue1.toUpperCase().indexOf(src) > -1 || txtValue2.toUpperCase().indexOf(src) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
+  }
+}
+</script>
+  
   <body data-spy="scroll" data-target="#navbar1" data-offset="60">
     <header class="bg-primary">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12">
-                    <div class="text-center m-0 vh-30 d-flex flex-column justify-content-center text-light">
-                        <h1 class="display-6">/h1>
-                        <p></p>
-                        <p class="lead">Submit your 3D models or recommend one to be added</p>
+                        <h1 class="display-6"><b></b></h1>
+                        <p class="lead"><b>Submit your 3D models below or recommend one to be added.</b></p>
                         <div class="row">
                                   </div>
                                 </div> 
@@ -41,7 +67,7 @@
     </header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
         <div class="container">
-            <a class="navbar-brand mr-1 mb-1 mt-0" href="../index.html">3DPlantPhenomics.org</a>
+            <a class="navbar-brand mr-1 mb-1 mt-0" href="index.html">3DPlantPhenomics.org</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,24 +82,25 @@
                 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../tools.html">Phenotyping tools</a>
+                        <a class="nav-link" href="tools.html">Phenotyping tools</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../systems.html">Plant growth systems</a>
+                        <a class="nav-link" href="systems.html">Plant growth systems</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../outreach.html">Outreach</a>
+                        <a class="nav-link" href="outreach.html">Outreach</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../guide.html">3D printing guide</a>
+                        <a class="nav-link" href="guide.html">3D printing guide</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../form.html">Submit</a>
+                        <a class="nav-link" href="form.html">Submit</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../cite.html">Cite us</a>
+                        <a class="nav-link" href="cite.html">Cite us</a>
                     </li>
-                        </div>
+
+
                     </li>
                 </ul>
             </div>
@@ -81,51 +108,50 @@
     </nav> 
     <main>
 
-
         <section id="cards" class="container pb-5">
+            <div class="d-flex my-3">
+                <div class="jumbotron w-100 py-5 mx-auto">
+                    <h1>Cite us</h1>
+                    
+                    <p class="lead">
+                        This website was created as a repository for 3D printable models for plant phenotyping.  The aim is to acelerate author research discoverability by providing an additional means of linking to peer-reviewed research. The manuscript is in prepration and the early opening of the repository is to survey and populate in advance.
+                        <br/>
+                       </p>
+                       <a href="" class="class2">  <i><b>Griffiths M (in preparation) A 3D print repository for accessible and affordable plant phenomics.  </i></b><a/>
+                        <br/>
+                        <br/>
+                    <h4>Curator</h4>
+                    The respository so far has been self-funded and developed by Marcus Griffiths, PhD.<br/>
+                    Marcus is a Postdoctoral Fellow in root functional phenomics at the Noble Research Institute
+                    <br/>
+                    <a class="text-blue mr-2" rel="nofollow" href="https://twitter.com/marcusdgriff" title="Follow on Twitter"><i class="fab fa-twitter fa-2x"></i>@marcusdgriff</a></li>
+                    <br/>
+                    <a href="mailto:plantphenomics3d@icloud.com" target="_blank" class="btn btn-primary">Email Marcus</a>
 
-                        </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mb-6">
-                    <div class="card border-primary h-100">
-                        <div class="card-body d-flex flex-column align-items-start">
-                            <h4 class="card-title text-primary">Potato Shoot Pointcloud </h4> 
+                        <br/>
+                        <br/>
+                </p>
+
+                    <h4>Licence</h4>
+                    The website 3Dplantphenomics.org is made under MIT License.
+                    All rights belong to the authors of the 3D models. All model contributions reported on this site retain their original licences hosted by the contributor and are accredited accordingly.
+
+                </p>
+                        
+                        <br/>
+                    <h4>Data storage</h4>
+                        For model contributors to maintain ownership and ability to update their models, authors will host their own files on a citable data storage site with version control, such as:<br/>
+                        -<a href="https://zenodo.org" class="class2"> Zenodo <a/><br/>
+                        -<a href="https://datadryad.org/stash" class="class2"> Dryad <a/><br/>
+                        -<a href="https://github.com"class="class2"> Github <a/><br/>
+                        <br/>
+
+                        3D rendering on this repository uses the Sketchfab API and hosting<br/>
+                        -<a href="https://sketchfab.com" class="class2"> Sketchfab <a/><br/>
+
+                        Website source code & is hosted on <a href="https://github.com/marcusdgriff/3dplantphenomics" target="_blank" class="class2">Github</a></small>
+
 <br/>
-<div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" width="500" height="500" src="https://sketchfab.com/models/972c946c51e14cf4b2cf2fb0e77e310c/embed?autospin=0.2&amp;autostart=1&amp;preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
-
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-6">
-                    <div class="card border-primary h-100">
-
-<div class="list-group">
-<a href="#" class="list-group-item list-group-item-action active disabled">Contributor: Phenospex</a>
-<a href="#" class="list-group-item list-group-item-action disabled">No model file available</a>
-<a href="#" class="list-group-item list-group-item-action disabled">Licence: CC Attribution</a>
-</div>
-
-                        <div class="card-body d-flex flex-column align-items-start">
-
-                            <h4 class="card-title">Overview</h4>
-                            <p class="card-text">2 potato plants scanned with PlantEye. The 3D model has a resolution of approx. 1mm
-
-                            
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
 
                     </p>
                 </div>
