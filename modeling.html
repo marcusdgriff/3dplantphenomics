@@ -54,8 +54,10 @@ function myFunction() {
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12">
-                        <h1 class="display-6"><b></b></h1>
-                        <p class="lead"><b>Submit your 3D models below or recommend one to be added.</b></p>
+                    <div class="text-center m-0 vh-30 d-flex flex-column justify-content-center text-light">
+                        <h1 class="display-6">/h1>
+                        <p></p>
+                        <p class="lead">Submit your 3D models or recommend one to be added</p>
                         <div class="row">
                                   </div>
                                 </div> 
@@ -110,14 +112,36 @@ function myFunction() {
         </div>
     </nav> 
     <main>
-
         <section id="cards" class="container pb-5">
             <div class="d-flex my-3">
                 <div class="jumbotron w-100 py-5 mx-auto">
-                    <h1>3D printing guide coming soon!</h1>
+                    <h1>3D print models for plant Model Verification and Analyses</h1>
                     <p class="lead">
-                        If you would like to contribute please get in touch.
-                         <p></p>
+                        Browse the repository below.
+                        <p></p>
+
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type here to filter the list...">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:25%;">Model preview</th>
+    <th style="width:35%;">Model name</th>
+    <th style="width:20%;">File type</th>
+    <th style="width:20%;">Contributor</th>
+   </tr>
+  <tr>
+    <td><a href="repository/na.html"> <img style="border:3px solid teal;" src="images/na.png" width="50%" alt="Alt text" /></td>
+    <td><a href="repository/na.html">Nothing here yet!</a></td>
+    <td>File type <p> <span class="badge badge-primary">Print optimized model</span></td>
+    <td>Author</td>
+  </tr>
+
+</table>
+
+
+                        <p></p>
+                        If you know a model that is not listed on this repository, please fill out the form at the link below.
+                        <p></p>
 
 
                     </p>
