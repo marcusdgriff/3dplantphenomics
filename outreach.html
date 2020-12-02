@@ -1,489 +1,734 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3DPlantPhenomics.org</title>
-    <meta name="description" content="Plant Phenotyping 3D Printing metaverse" />
-    <meta name="generator" content="Plant Phenotyping 3D Printing metaverse">
-    <link rel="icon" href="https://themes.guide/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="https://themes.guide/favicon.ico" type="image/x-icon" />
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ThemesGuide">
-    <meta name="twitter:creator" content="@ThemesGuide">
-    <meta name="twitter:title" content="3D Print Metaverse for Plant Phenomics">
-    <meta name="twitter:description" content="Repository for downloadable 3D models for assisting plant research">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
-    <link href="./theme.css" rel="stylesheet">
-    <link href="./template.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3c7811dab3.js" crossorigin="anonymous"></script>
-  </head>
-
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>3DPlantPhenomics.org</title>
+  <meta content="Plant Phenotyping 3D Printing metaverse" name="description">
+  <meta content="Plant Phenotyping 3D Printing metaverse" name="generator">
+  <link href="https://themes.guide/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://themes.guide/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="@ThemesGuide" name="twitter:site">
+  <meta content="@ThemesGuide" name="twitter:creator">
+  <meta content="3D Print Metaverse for Plant Phenomics" name="twitter:title">
+  <meta content="Repository for downloadable 3D models for assisting plant research" name="twitter:description">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
+  <link href="./theme.css" rel="stylesheet">
+  <link href="./template.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3c7811dab3.js">
+  </script>
   <script>
-function myFunction() {
-  var src, input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase().trim().split(' ');
-  table = document.getElementById("myTable");
-  for (j = 0; j < filter.length; j++) {
-    tr = table.getElementsByTagName("tr");
-    src = filter[j].trim();
-    for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[1];
-      td1 = tr[i].getElementsByTagName("td")[2];
-      td2 = tr[i].getElementsByTagName("td")[3];
-      if (src!='' && td && td2) {
-        txtValue = td.textContent || td.innerText;
-        txtValue1 = td1.textContent || td1.innerText;
-        txtValue2 = td2.textContent || td2.innerText;
-        if (txtValue.toUpperCase().indexOf(src) > -1  || txtValue1.toUpperCase().indexOf(src) > -1 || txtValue2.toUpperCase().indexOf(src) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }       
-    }
+  function myFunction() {
+   var src, input, filter, table, tr, td, i, txtValue;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase().trim().split(' ');
+   table = document.getElementById("myTable");
+   for (j = 0; j < filter.length; j++) {
+     tr = table.getElementsByTagName("tr");
+     src = filter[j].trim();
+     for (i = 0; i < tr.length; i++) {
+       td = tr[i].getElementsByTagName("td")[1];
+       td1 = tr[i].getElementsByTagName("td")[2];
+       td2 = tr[i].getElementsByTagName("td")[3];
+       if (src!='' && td && td2) {
+         txtValue = td.textContent || td.innerText;
+         txtValue1 = td1.textContent || td1.innerText;
+         txtValue2 = td2.textContent || td2.innerText;
+         if (txtValue.toUpperCase().indexOf(src) > -1  || txtValue1.toUpperCase().indexOf(src) > -1 || txtValue2.toUpperCase().indexOf(src) > -1) {
+           tr[i].style.display = "";
+         } else {
+           tr[i].style.display = "none";
+         }
+       }       
+     }
+   }
   }
-}
-</script>
-
-  <body data-spy="scroll" data-target="#navbar1" data-offset="60">
-    <header class="bg-primary">
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-12">
-                    <div class="text-center m-0 vh-30 d-flex flex-column justify-content-center text-light">
-                        <h1 class="display-6">/h1>
-                        <p></p>
-                        <p class="lead">Submit your 3D models or recommend one to be added</p>
-                        <div class="row">
-                                  </div>
-                                </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </script>
+</head>
+<body data-offset="60" data-spy="scroll" data-target="#navbar1">
+  <header class="bg-primary">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12">
+          <div class="text-center m-0 vh-30 d-flex flex-column justify-content-center text-light">
+            <h1 class="display-6">/h1&gt;</h1>
+            <p></p>
+            <p class="lead">Submit your 3D models or recommend one to be added</p>
+            <div class="row"></div>
+          </div>
         </div>
-    </header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
-        <div class="container">
-            <a class="navbar-brand mr-1 mb-1 mt-0" href="index.html">3DPlantPhenomics.org</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
-                <ul class="navbar-nav">
-                    
-                        </a>
-                  
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tools.html">Phenotyping tools</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="systems.html">Plant growth systems</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="outreach.html">Outreach</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="modeling.html">Modeling/Analysis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="guide.html">3D printing guide</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="form.html">Submit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cite.html">Cite us</a>
-                    </li>
-
-
-                    </li>
-                </ul>
-            </div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
+    <div class="container">
+      <a class="navbar-brand mr-1 mb-1 mt-0" href="index.html">3DPlantPhenomics.org</a> <button class="navbar-toggler" data-target="#collapsingNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
+        <ul class="navbar-nav"></ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="tools.html">Phenotyping tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="systems.html">Plant growth systems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="outreach.html">Outreach</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modeling.html">Modeling/Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guide.html">3D printing guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Submit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cite.html">Cite us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="container pb-5" id="cards">
+      <div class="d-flex my-3">
+        <div class="jumbotron w-100 py-5 mx-auto">
+          <h1>3D models & prints for outreach</h1>
+          <p class="lead">Browse the repository below.</p>
+          <p></p><input id="myInput" onkeyup="myFunction()" placeholder="Type here to filter the list..." type="text">
+          <table id="myTable">
+            <tr class="header">
+              <th style="width:25%;">Model preview</th>
+              <th style="width:35%;">Model name</th>
+              <th style="width:20%;">File type</th>
+              <th style="width:20%;">Contributor</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/wheat-mg.html"><img alt="Wheat CT root system Marcus Griffiths" src="images/wheat-seedling-mg.png" style="border:3px solid teal;" width="50%"></a>
+              </td>
+              <td>
+                <a href="repository/wheat-mg.html">Wheat seedling root system X-ray CT scan</a>
+              </td>
+              <td>.STL</td>
+              <td>Marcus Griffiths</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/maize-crown-ne.html"><img alt="Maize CT root crown Nate ellis" src="images/maize-crown-nate-ellis.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/maize-crown-ne.html">Maize root crown X-ray CT scan</a>
+              </td>
+              <td>.WRL</td>
+              <td>Nate Ellis</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/redoak-petiole-craig-brodersen.html"><img alt="Red Oak (Quercus rubra) petiole X-ray CT scan" src="images/redoak-petiole-craig-brodersen.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/redoak-petiole-craig-brodersen.html">Red Oak (Quercus rubra) Tree petiole X-ray CT scan</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Craig Brodersen</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/americanbeech-root-craig-brodersen.html"><img alt="American Beech (Fagus grandifolia) Tree root X-ray CT scan" src="images/americanbeech-root-craig-brodersen.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/americanbeech-root-craig-brodersen.html">American Beech (Fagus grandifolia) Tree root X-ray CT scan</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Craig Brodersen</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/whiteash-petiole-craig-brodersen.html"><img alt="White Ash (Fraxinus americana) Tree root X-ray CT scan" src="images/whiteash-petiole-craig-brodersen.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/whiteash-petiole-craig-brodersen.html">White Ash (Fraxinus americana) Tree petiole X-ray CT scan</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Craig Brodersen</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/whiteash-root-craig-brodersen.html"><img alt="White Ash (Fraxinus americana) Tree root X-ray CT scan" src="images/whiteash-root-craig-brodersen.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/whiteash-root-craig-brodersen.html">White Ash (Fraxinus americana) Tree root X-ray CT scan</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Craig Brodersen</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/redmaple-petiole-craig-brodersen.html"><img alt="American Beech (Fagus grandifolia) Tree petiole X-ray CT scan" src="images/redmaple-petiole-craig-brodersen.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/redmaple-petiole-craig-brodersen.html">Red Maple (Acer rubrum) Tree petiole X-ray CT scan</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Craig Brodersen</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/whitepine-wood-craig-brodersen.html"><img alt="White Pine (Pinus strobus) Tree wood X-ray CT scan" src="images/whitepine-wood-craig-brodersen.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/whitepine-wood-craig-brodersen.html">White Pine (Pinus strobus) Tree wood X-ray CT scan</a>
+              </td>
+              <td>No model file available</td>
+              <td>Craig Brodersen</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/ash-rings-jay-wason.html"><img alt="White ash tree growth rings X-ray CT scan" src="images/ash-rings-jay-wason.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/ash-rings-jay-wason.html">White ash tree growth rings X-ray CT scan</a>
+              </td>
+              <td>No model file available</td>
+              <td>Jay Wason</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-birch-oliver-wilson.html"><img alt="Pollen Birch Oliver Wilson" src="images/pollen-birch-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-birch-oliver-wilson.html">Pollen from Silver Birch (Betula pendula) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-cedar-oliver-wilson.html"><img alt="Pollen Cedar Oliver Wilson" src="images/pollen-cedar-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-cedar-oliver-wilson.html">Pollen from Cedar of Lebanon (Cedrus libani, Pinaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-deodar-oliver-wilson.html"><img alt="Pollen Deodar Cedar Oliver Wilson" src="images/pollen-deodar-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-deodar-oliver-wilson.html">Pollen from Deodar Cedar (Cedrus deodara, Pinaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-wormwood-oliver-wilson.html"><img alt="Pollen Wormwood Oliver Wilson" src="images/pollen-wormwood-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-wormwood-oliver-wilson.html">Pollen from Sweet Wormwood (Artemisia annua, Asteraceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-willow-oliver-wilson.html"><img alt="Pollen Willow Oliver Wilson" src="images/pollen-willow-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-willow-oliver-wilson.html">Pollen from Goat Willow (Salix caprea, Salicaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-lime-oliver-wilson.html"><img alt="Pollen Lime Oliver Wilson" src="images/pollen-lime-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-lime-oliver-wilson.html">Pollen from Small-leaved Lime (Tilia cordata, Malvaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-maple-oliver-wilson.html"><img alt="Pollen Maple Oliver Wilson" src="images/pollen-maple-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-maple-oliver-wilson.html">Pollen from Field Maple (Acer campestre, Sapindaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-sedge-oliver-wilson.html"><img alt="Pollen Sedge Oliver Wilson" src="images/pollen-sedge-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-sedge-oliver-wilson.html">Pollen from Woollyfruit Sedge (Carex lasiocarpa, Cyperaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-ragweed-oliver-wilson.html"><img alt="Pollen Ragweed Oliver Wilson" src="images/pollen-ragweed-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-ragweed-oliver-wilson.html">Pollen from Perennial Ragweed (Ambrosia psilostachya, Asteraceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-ivy-oliver-wilson.html"><img alt="Pollen Ivy Oliver Wilson" src="images/pollen-ivy-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-ivy-oliver-wilson.html">Pollen from Ivy (Hedera helix, Araliaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-goosefoot-oliver-wilson.html"><img alt="Pollen Goosefoot Oliver Wilson" src="images/pollen-goosefoot-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-goosefoot-oliver-wilson.html">Pollen from Goosefoot (Chenopodium album, Amaranthaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-salvia-oliver-wilson.html"><img alt="Pollen Salvia Oliver Wilson" src="images/pollen-salvia-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-salvia-oliver-wilson.html">Pollen from Meadow Clary (Salvia pratensis, Lamiaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-winter-oliver-wilson.html"><img alt="Pollen Winter's bark Oliver Wilson" src="images/pollen-winter-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-winter-oliver-wilson.html">Pollen from Winter’s bark (Drimys winteri, Winteraceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-barley-oliver-wilson.html"><img alt="Pollen False Barley Oliver Wilson" src="images/pollen-barley-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-barley-oliver-wilson.html">Pollen from False Barley (Hordeum murinum, Poaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-atlas-oliver-wilson.html"><img alt="Pollen Atlas Cedar Oliver Wilson" src="images/pollen-atlas-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-atlas-oliver-wilson.html">Pollen from Atlas Cedar (Cedrus atlantica, Pinaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-sessile-oak-oliver-wilson.html"><img alt="Pollen Sessile Oak Oliver Wilson" src="images/pollen-sessile-oak-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-sessile-oak-oliver-wilson.html">Pollen from Sessile Oak (Quercus petraea, Fagaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-pedunculate-oak-oliver-wilson.html"><img alt="Pollen Pedunculate Oak Oliver Wilson" src="images/pollen-pedunculate-oak-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-pedunculate-oak-oliver-wilson.html">Pollen from Pedunculate Oak (Quercus robur, Fagaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-knapweed-oliver-wilson.html"><img alt="Pollen Common Knapweed Oliver Wilson" src="images/pollen-knapweed-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-knapweed-oliver-wilson.html">Pollen from Common Knapweed (Centaurea nigra, Asteraceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-ribwort-oliver-wilson.html"><img alt="Pollen Ribwort Oliver Wilson" src="images/pollen-ribwort-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-ribwort-oliver-wilson.html">Pollen from Ribwort (Plantago lanceolata, Plantaginaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/pollen-hazel-oliver-wilson.html"><img alt="Pollen Ribwort Oliver Wilson" src="images/pollen-hazel-oliver-wilson.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/pollen-hazel-oliver-wilson.html">Pollen from Hazel Tree (Corylus avellana, Betulaceae) confocal microscopy z-stacks</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Oliver Wilson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/palmer-shoot-ohio.html"><img alt="Palmer Amaranth Shoot Pointcloud Ohio State" src="images/palmer-shoot-ohio.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/palmer-shoot-ohio.html">Palmer Amaranth Shoot Pointcloud</a>
+              </td>
+              <td>.ply</td>
+              <td>Ohio State University Art and Design</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/waterhemp-shoot-ohio.html"><img alt="Waterhemp Shoot Pointcloud Ohio State" src="images/waterhemp-shoot-ohio.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/waterhemp-shoot-ohio.html">Waterhemp Shoot Pointcloud</a>
+              </td>
+              <td>.OBJ</td>
+              <td>Ohio State University Art and Design</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/marestail-shoot-ohio.html"><img alt="Marestail Shoot Pointcloud Ohio State" src="images/marestail-shoot-ohio.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/marestail-shoot-ohio.html">Marestail Shoot Pointcloud</a>
+              </td>
+              <td>.OBJ</td>
+              <td>Ohio State University Art and Design</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/ragweed-shoot-ohio.html"><img alt="Common Ragweed Shoot Pointcloud Ohio State" src="images/ragweed-shoot-ohio.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/ragweed-shoot-ohio.html">Common Ragweed Shoot Pointcloud</a>
+              </td>
+              <td>.OBJ</td>
+              <td>Ohio State University Art and Design</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/cabbage-shoot-phenospex.html"><img alt="Cabbage Shoot Pointcloud Phenospex" src="images/cabbage-shoot-phenospex.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/cabbage-shoot-phenospex.html">Cabbage Shoot Pointcloud</a>
+              </td>
+              <td>No model file available</td>
+              <td>Phenospex</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/beet-multi-shoot-phenospex.html"><img alt="Sugar Beet Shoot Pointcloud Phenospex" src="images/beet-multi-shoot-phenospex.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/beet-multi-shoot-phenospex.html">Sugar Beet Shoot Pointcloud</a>
+              </td>
+              <td>.PLY</td>
+              <td>Phenospex</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/beet-ndvi-shoot-phenospex.html"><img alt="Sugar Beet Shoot Pointcloud Phenospex" src="images/beet-ndvi-shoot-phenospex.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/beet-ndvi-shoot-phenospex.html">Sugar Beet (NDVI) Shoot Pointcloud</a>
+              </td>
+              <td>.PLY</td>
+              <td>Phenospex</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/arabidopsis-shoot-phenospex.html"><img alt="Sugar Beet (NDVI) Shoot Pointcloud Phenospex" src="images/arabidopsis-shoot-phenospex.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/arabidopsis-shoot-phenospex.html">Arabidopsis Shoot Pointcloud</a>
+              </td>
+              <td>No model file available</td>
+              <td>Phenospex</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/barley-shoot-phenospex.html"><img alt="Barley Shoot Pointcloud Phenospex" src="images/barley-shoot-phenospex.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/barley-shoot-phenospex.html">Barley Shoot Pointcloud</a>
+              </td>
+              <td>No model file available</td>
+              <td>Phenospex</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/maize-shoot-phenospex.html"><img alt="Maize Shoot Pointcloud Phenospex" src="images/maize-shoot-phenospex.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/maize-shoot-phenospex.html">Maize Shoot Pointcloud</a>
+              </td>
+              <td>No model file available</td>
+              <td>Phenospex</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/potato-shoot-phenospex.html"><img alt="Potato Shoot Pointcloud Phenospex" src="images/potato-shoot-phenospex.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/potato-shoot-phenospex.html">Potato Shoot Pointcloud</a>
+              </td>
+              <td>No model file available</td>
+              <td>Phenospex</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/canola-shoot-phenospex.html"><img alt="Canola Shoot Pointcloud Phenospex" src="images/canola-shoot-phenospex.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/canola-shoot-phenospex.html">Canola Shoot Pointcloud</a>
+              </td>
+              <td>No model file available</td>
+              <td>Phenospex</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/menara-tree-shenkin.html"><img alt="Menara Tree Pointcloud Alexander Shenkin" src="images/menara-tree-shenkin.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/menara-tree-shenkin.html">Menara Tree LiDAR UAV Pointcloud</a>
+              </td>
+              <td>No model file available</td>
+              <td>Alexander Shenkin</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/plant-cell-pavelmo4alov.html"><img alt="Plant cell with compartments pavelmo4alov" src="images/plant-cell-pavelmo4alov.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/plant-cell-pavelmo4alov.html">Plant cell with compartments cgi render</a>
+              </td>
+              <td>No model file available</td>
+              <td>pavelmo4alov</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/eukayotic-cell-SGU.html"><img alt="Eukaryotic Cell SGU" src="images/eukayotic-cell-SGU.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/eukayotic-cell-SGU.html">Eukaryotic Cell cgi render</a>
+              </td>
+              <td>No model file available</td>
+              <td>The Center for BioMedical Visualization (SGU)</td>
+            </tr>
+          </table>
+          <p></p>If you know a model that is not listed on this repository, please fill out the form at the link below.
+          <p></p>
+          <p></p>
         </div>
-    </nav> 
-    <main>
-        <section id="cards" class="container pb-5">
-            <div class="d-flex my-3">
-                <div class="jumbotron w-100 py-5 mx-auto">
-                    <h1>3D models & prints for outreach</h1>
-                    <p class="lead">
-                        Browse the repository below.
-                        <p></p>
-
-                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type here to filter the list...">
-
-<table id="myTable">
-  <tr class="header">
-    <th style="width:25%;">Model preview</th>
-    <th style="width:35%;">Model name</th>
-    <th style="width:20%;">File type</th>
-    <th style="width:20%;">Contributor</th>
-  </tr>
-  <tr>
-    <td><a href="repository/wheat-mg.html"> <img style="border:3px solid teal;" src="images/wheat-seedling-mg.png" width="50%" alt="Wheat CT root system Marcus Griffiths" /></td>
-    <td><a href="repository/wheat-mg.html">Wheat seedling root system X-ray CT scan</a></td>
-    <td>.STL</td>
-    <td>Marcus Griffiths</td>
-  </tr>
-  <tr>
-      <td><a href="repository/maize-crown-ne.html"> <img style="border:3px solid teal;" src="images/maize-crown-nate-ellis.png" width="50%" alt="Maize CT root crown Nate ellis" />
-    <p class="lead"></td>
-      <td><a href="repository/maize-crown-ne.html">Maize root crown X-ray CT scan</td>
-      <td>.WRL</td>
-      <td>Nate Ellis</td>
-  </tr>
-  <tr>
-      <td><a href="repository/redoak-petiole-craig-brodersen.html"> <img style="border:3px solid teal;" src="images/redoak-petiole-craig-brodersen.png" width="50%" alt="Red Oak (Quercus rubra) petiole X-ray CT scan" />
-    <p class="lead"></td>
-      <td><a href="repository/redoak-petiole-craig-brodersen.html">Red Oak (Quercus rubra) Tree petiole X-ray CT scan</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Craig Brodersen</td>
-  </tr>
-    <tr>
-      <td><a href="repository/americanbeech-root-craig-brodersen.html"> <img style="border:3px solid teal;" src="images/americanbeech-root-craig-brodersen.png" width="50%" alt="American Beech (Fagus grandifolia) Tree root X-ray CT scan" />
-    <p class="lead"></td>
-      <td><a href="repository/americanbeech-root-craig-brodersen.html">American Beech (Fagus grandifolia) Tree root X-ray CT scan</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Craig Brodersen</td>
- </tr>
-    <tr>
-      <td><a href="repository/whiteash-petiole-craig-brodersen.html"> <img style="border:3px solid teal;" src="images/whiteash-petiole-craig-brodersen.png" width="50%" alt="White Ash (Fraxinus americana) Tree root X-ray CT scan" />
-    <p class="lead"></td>
-      <td><a href="repository/whiteash-petiole-craig-brodersen.html">White Ash (Fraxinus americana) Tree petiole X-ray CT scan</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Craig Brodersen</td>
-  </tr>
-    <tr>
-      <td><a href="repository/whiteash-root-craig-brodersen.html"> <img style="border:3px solid teal;" src="images/whiteash-root-craig-brodersen.png" width="50%" alt="White Ash (Fraxinus americana) Tree root X-ray CT scan" />
-    <p class="lead"></td>
-      <td><a href="repository/whiteash-root-craig-brodersen.html">White Ash (Fraxinus americana) Tree root X-ray CT scan</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Craig Brodersen</td>
-  </tr>
-    <tr>
-      <td><a href="repository/redmaple-petiole-craig-brodersen.html"> <img style="border:3px solid teal;" src="images/redmaple-petiole-craig-brodersen.png" width="50%" alt="American Beech (Fagus grandifolia) Tree petiole X-ray CT scan" />
-    <p class="lead"></td>
-      <td><a href="repository/redmaple-petiole-craig-brodersen.html">Red Maple (Acer rubrum) Tree petiole X-ray CT scan</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Craig Brodersen</td>
-  </tr>
-    <tr>
-      <td><a href="repository/whitepine-wood-craig-brodersen.html"> <img style="border:3px solid teal;" src="images/whitepine-wood-craig-brodersen.png" width="50%" alt="White Pine (Pinus strobus) Tree wood X-ray CT scan" />
-    <p class="lead"></td>
-      <td><a href="repository/whitepine-wood-craig-brodersen.html">White Pine (Pinus strobus) Tree wood X-ray CT scan</td>
-      <td>No model file available</td>
-      <td>Craig Brodersen</td>
-  </tr>
-    <tr>
-      <td><a href="repository/ash-rings-jay-wason.html"> <img style="border:3px solid teal;" src="images/ash-rings-jay-wason.png" width="50%" alt="White ash tree growth rings X-ray CT scan" />
-    <p class="lead"></td>
-      <td><a href="repository/ash-rings-jay-wason.html">White ash tree growth rings X-ray CT scan</td>
-      <td>No model file available</td>
-      <td>Jay Wason</td>
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-birch-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-birch-oliver-wilson.png" width="50%" alt="Pollen Birch Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-birch-oliver-wilson.html">Pollen from Silver Birch (Betula pendula) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td>
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-cedar-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-cedar-oliver-wilson.png" width="50%" alt="Pollen Cedar Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-cedar-oliver-wilson.html">Pollen from Cedar of Lebanon (Cedrus libani, Pinaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-deodar-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-deodar-oliver-wilson.png" width="50%" alt="Pollen Deodar Cedar Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-deodar-oliver-wilson.html">Pollen from Deodar Cedar (Cedrus deodara, Pinaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-wormwood-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-wormwood-oliver-wilson.png" width="50%" alt="Pollen Wormwood Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-wormwood-oliver-wilson.html">Pollen from Sweet Wormwood (Artemisia annua, Asteraceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-willow-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-willow-oliver-wilson.png" width="50%" alt="Pollen Willow Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-willow-oliver-wilson.html">Pollen from Goat Willow (Salix caprea, Salicaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-lime-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-lime-oliver-wilson.png" width="50%" alt="Pollen Lime Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-lime-oliver-wilson.html">Pollen from Small-leaved Lime (Tilia cordata, Malvaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-maple-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-maple-oliver-wilson.png" width="50%" alt="Pollen Maple Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-maple-oliver-wilson.html">Pollen from Field Maple (Acer campestre, Sapindaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-sedge-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-sedge-oliver-wilson.png" width="50%" alt="Pollen Sedge Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-sedge-oliver-wilson.html">Pollen from Woollyfruit Sedge (Carex lasiocarpa, Cyperaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-ragweed-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-ragweed-oliver-wilson.png" width="50%" alt="Pollen Ragweed Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-ragweed-oliver-wilson.html">Pollen from Perennial Ragweed (Ambrosia psilostachya, Asteraceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-ivy-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-ivy-oliver-wilson.png" width="50%" alt="Pollen Ivy Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-ivy-oliver-wilson.html">Pollen from Ivy (Hedera helix, Araliaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-goosefoot-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-goosefoot-oliver-wilson.png" width="50%" alt="Pollen Goosefoot Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-goosefoot-oliver-wilson.html">Pollen from Goosefoot (Chenopodium album, Amaranthaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-salvia-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-salvia-oliver-wilson.png" width="50%" alt="Pollen Salvia Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-salvia-oliver-wilson.html">Pollen from Meadow Clary (Salvia pratensis, Lamiaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-winter-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-winter-oliver-wilson.png" width="50%" alt="Pollen Winter's bark Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-winter-oliver-wilson.html">Pollen from Winter’s bark (Drimys winteri, Winteraceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-barley-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-barley-oliver-wilson.png" width="50%" alt="Pollen False Barley Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-barley-oliver-wilson.html">Pollen from False Barley (Hordeum murinum, Poaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-atlas-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-atlas-oliver-wilson.png" width="50%" alt="Pollen Atlas Cedar Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-atlas-oliver-wilson.html">Pollen from Atlas Cedar (Cedrus atlantica, Pinaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-sessile-oak-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-sessile-oak-oliver-wilson.png" width="50%" alt="Pollen Sessile Oak Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-sessile-oak-oliver-wilson.html">Pollen from Sessile Oak (Quercus petraea, Fagaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-pedunculate-oak-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-pedunculate-oak-oliver-wilson.png" width="50%" alt="Pollen Pedunculate Oak Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-pedunculate-oak-oliver-wilson.html">Pollen from Pedunculate Oak (Quercus robur, Fagaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-knapweed-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-knapweed-oliver-wilson.png" width="50%" alt="Pollen Common Knapweed Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-knapweed-oliver-wilson.html">Pollen from Common Knapweed (Centaurea nigra, Asteraceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-ribwort-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-ribwort-oliver-wilson.png" width="50%" alt="Pollen Ribwort Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-ribwort-oliver-wilson.html">Pollen from Ribwort (Plantago lanceolata, Plantaginaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-      <tr>
-      <td><a href="repository/pollen-hazel-oliver-wilson.html"> <img style="border:3px solid teal;" src="images/pollen-hazel-oliver-wilson.png" width="50%" alt="Pollen Ribwort Oliver Wilson" />
-    <p class="lead"></td>
-      <td><a href="repository/pollen-hazel-oliver-wilson.html">Pollen from Hazel Tree (Corylus avellana, Betulaceae) confocal microscopy z-stacks</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Oliver Wilson</td> 
-  </tr>
-    <tr>
-      <td><a href="repository/palmer-shoot-ohio.html"> <img style="border:3px solid teal;" src="images/palmer-shoot-ohio.png" width="50%" alt="Palmer Amaranth Shoot Pointcloud Ohio State" />
-    <p class="lead"></td>
-      <td><a href="repository/palmer-shoot-ohio.html">Palmer Amaranth Shoot Pointcloud</td>
-      <td>.ply</td>
-      <td>Ohio State University Art and Design</td>
-  </tr>
-    <tr>
-      <td><a href="repository/waterhemp-shoot-ohio.html"> <img style="border:3px solid teal;" src="images/waterhemp-shoot-ohio.png" width="50%" alt="Waterhemp Shoot Pointcloud Ohio State" />
-    <p class="lead"></td>
-      <td><a href="repository/waterhemp-shoot-ohio.html">Waterhemp Shoot Pointcloud</td>
-      <td>.OBJ</td>
-      <td>Ohio State University Art and Design</td>
-  </tr>
-    <tr>
-      <td><a href="repository/marestail-shoot-ohio.html"> <img style="border:3px solid teal;" src="images/marestail-shoot-ohio.png" width="50%" alt="Marestail Shoot Pointcloud Ohio State" />
-    <p class="lead"></td>
-      <td><a href="repository/marestail-shoot-ohio.html">Marestail Shoot Pointcloud</td>
-      <td>.OBJ</td>
-      <td>Ohio State University Art and Design</td>
-  </tr>
-    <tr>
-      <td><a href="repository/ragweed-shoot-ohio.html"> <img style="border:3px solid teal;" src="images/ragweed-shoot-ohio.png" width="50%" alt="Common Ragweed Shoot Pointcloud Ohio State" />
-    <p class="lead"></td>
-      <td><a href="repository/ragweed-shoot-ohio.html">Common Ragweed Shoot Pointcloud</td>
-      <td>.OBJ</td>
-      <td>Ohio State University Art and Design</td>
-  </tr>
-      <tr>
-      <td><a href="repository/cabbage-shoot-phenospex.html"> <img style="border:3px solid teal;" src="images/cabbage-shoot-phenospex.png" width="50%" alt="Cabbage Shoot Pointcloud Phenospex" />
-    <p class="lead"></td>
-      <td><a href="repository/cabbage-shoot-phenospex.html">Cabbage Shoot Pointcloud</td>
-      <td>No model file available</td>
-      <td>Phenospex</td>
-  </tr>
-      <tr>
-      <td><a href="repository/beet-multi-shoot-phenospex.html"> <img style="border:3px solid teal;" src="images/beet-multi-shoot-phenospex.png" width="50%" alt="Sugar Beet Shoot Pointcloud Phenospex" />
-    <p class="lead"></td>
-      <td><a href="repository/beet-multi-shoot-phenospex.html">Sugar Beet Shoot Pointcloud</td>
-      <td>.PLY</td>
-      <td>Phenospex</td>
-  </tr>
-      <tr>
-      <td><a href="repository/beet-ndvi-shoot-phenospex.html"> <img style="border:3px solid teal;" src="images/beet-ndvi-shoot-phenospex.png" width="50%" alt="Sugar Beet Shoot Pointcloud Phenospex" />
-    <p class="lead"></td>
-      <td><a href="repository/beet-ndvi-shoot-phenospex.html">Sugar Beet (NDVI) Shoot Pointcloud</td>
-      <td>.PLY</td>
-      <td>Phenospex</td>
-  </tr>
-      <tr>
-      <td><a href="repository/arabidopsis-shoot-phenospex.html"> <img style="border:3px solid teal;" src="images/arabidopsis-shoot-phenospex.png" width="50%" alt="Sugar Beet (NDVI) Shoot Pointcloud Phenospex" />
-    <p class="lead"></td>
-      <td><a href="repository/arabidopsis-shoot-phenospex.html">Arabidopsis Shoot Pointcloud</td>
-      <td>No model file available</td>
-      <td>Phenospex</td>
-  </tr>
-      <tr>
-      <td><a href="repository/barley-shoot-phenospex.html"> <img style="border:3px solid teal;" src="images/barley-shoot-phenospex.png" width="50%" alt="Barley Shoot Pointcloud Phenospex" />
-    <p class="lead"></td>
-      <td><a href="repository/barley-shoot-phenospex.html">Barley Shoot Pointcloud</td>
-      <td>No model file available</td>
-      <td>Phenospex</td>
-  </tr>
-      <tr>
-      <td><a href="repository/maize-shoot-phenospex.html"> <img style="border:3px solid teal;" src="images/maize-shoot-phenospex.png" width="50%" alt="Maize Shoot Pointcloud Phenospex" />
-    <p class="lead"></td>
-      <td><a href="repository/maize-shoot-phenospex.html">Maize Shoot Pointcloud</td>
-      <td>No model file available</td>
-      <td>Phenospex</td>
-  </tr>
-      <tr>
-      <td><a href="repository/potato-shoot-phenospex.html"> <img style="border:3px solid teal;" src="images/potato-shoot-phenospex.png" width="50%" alt="Potato Shoot Pointcloud Phenospex" />
-    <p class="lead"></td>
-      <td><a href="repository/potato-shoot-phenospex.html">Potato Shoot Pointcloud</td>
-      <td>No model file available</td>
-      <td>Phenospex</td>
-  </tr>
-      <tr>
-      <td><a href="repository/canola-shoot-phenospex.html"> <img style="border:3px solid teal;" src="images/canola-shoot-phenospex.png" width="50%" alt="Canola Shoot Pointcloud Phenospex" />
-    <p class="lead"></td>
-      <td><a href="repository/canola-shoot-phenospex.html">Canola Shoot Pointcloud</td>
-      <td>No model file available</td>
-      <td>Phenospex</td>
-  </tr>
-      <tr>
-      <td><a href="repository/menara-tree-shenkin.html"> <img style="border:3px solid teal;" src="images/menara-tree-shenkin.png" width="50%" alt="Menara Tree Pointcloud Alexander Shenkin" />
-    <p class="lead"></td>
-      <td><a href="repository/menara-tree-shenkin.html">Menara Tree LiDAR UAV Pointcloud</td>
-      <td>No model file available</td>
-      <td>Alexander Shenkin</td>
-  </tr>
-  <tr>
-      <td><a href="repository/plant-cell-pavelmo4alov.html"> <img style="border:3px solid teal;" src="images/plant-cell-pavelmo4alov.png" width="50%" alt="Plant cell with compartments pavelmo4alov" />
-    <p class="lead"></td>
-      <td><a href="repository/plant-cell-pavelmo4alov.html">Plant cell with compartments cgi render</td>
-      <td>No model file available</td>
-      <td>pavelmo4alov</td>
-  </tr>
-  <tr>
-      <td><a href="repository/eukayotic-cell-SGU.html"> <img style="border:3px solid teal;" src="images/eukayotic-cell-SGU.png" width="50%" alt="Eukaryotic Cell SGU" />
-    <p class="lead"></td>
-      <td><a href="repository/eukayotic-cell-SGU.html">Eukaryotic Cell cgi render</td>
-      <td>No model file available</td>
-      <td>The Center for BioMedical Visualization (SGU)</td>
-  </tr>
-</table>
-
-
-                        <p></p>
-                        If you know a model that is not listed on this repository, please fill out the form at the link below.
-                        <p></p>
-
-
-                    </p>
-                </div>
-            </div>
-    </main>
-      <footer id="footer" class="bg-dark text-light py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-6 col-md-6 col-lg-3 mb-2">
-                    <h6 class="text-uppercase">3D print repository</h6>
-                    <ul class="nav flex-column">
-                        <li><a class="text-white" target="ext" rel="nofollow" href="tools.html">Phenotyping tools</a></li>
-                        <li><a class="text-white" target="ext" rel="nofollow" href="systems.html">Plant growth systems</a></li>
-                        <li><a class="text-white" target="ext" rel="nofollow" href="outreach.html">Outreach</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 mb-2">
-                    <h6 class="text-uppercase">More</h6>
-                    <ul class="nav flex-column">
-                        <li><a class="text-white" target="_new" href="guide.html">3D printing guide</a></li>
-                        <li><a class="text-white" target="_new" href="form.html">Submit</a></li>
-                        <li><a class="text-white" target="_new" href="form.html">Service</a></li>
-                        <li><a class="text-white" target="_new" href="cite.html">Cite us</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6 mb-2 text-right">
-                    <h6 class="text-uppercase">Follow</h6>
-                    <ul class="nav float-right">
-                        <li><a class="text-white mr-2" rel="nofollow" href="https://twitter.com/3dplantphenom" title="Follow on Twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
-                        <li><a class="text-white mr" rel="nofollow" href="https://github.com/marcusdgriff" title="Follow on GitHub"><i class="fab fa-github fa-2x"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <footer class="footer text-center pt-2 pb-5">
-                <small class="copyright"><i class="fab fa-safari"></i>  designed using Bootstrap 4.0, hosted on <i class="fab fa-github"></i>. Boldstrap template by <a href="https://bootstrap.themes.guide/boldstrap/" target="_blank" class="class2">Themes.guide</a>. Source code available <a href="https://github.com/marcusdgriff/3dplantphenomics" target="_blank" class="class2">here</a></small>
-            <!--/row-->
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-light py-5" id="footer">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-6 col-md-6 col-lg-3 mb-2">
+          <h6 class="text-uppercase">3D print repository</h6>
+          <ul class="nav flex-column">
+            <li>
+              <a class="text-white" href="tools.html" rel="nofollow" target="ext">Phenotyping tools</a>
+            </li>
+            <li>
+              <a class="text-white" href="systems.html" rel="nofollow" target="ext">Plant growth systems</a>
+            </li>
+            <li>
+              <a class="text-white" href="outreach.html" rel="nofollow" target="ext">Outreach</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+        <div class="col-6 col-md-6 col-lg-3 mb-2">
+          <h6 class="text-uppercase">More</h6>
+          <ul class="nav flex-column">
+            <li>
+              <a class="text-white" href="guide.html" target="_new">3D printing guide</a>
+            </li>
+            <li>
+              <a class="text-white" href="form.html" target="_new">Submit</a>
+            </li>
+            <li>
+              <a class="text-white" href="form.html" target="_new">Service</a>
+            </li>
+            <li>
+              <a class="text-white" href="cite.html" target="_new">Cite us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 mb-2 text-right">
+          <h6 class="text-uppercase">Follow</h6>
+          <ul class="nav float-right">
+            <li>
+              <a class="text-white mr-2" href="https://twitter.com/3dplantphenom" rel="nofollow" title="Follow on Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a class="text-white mr" href="https://github.com/marcusdgriff" rel="nofollow" title="Follow on GitHub"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer text-center pt-2 pb-5">
+        <small class="copyright"><i class="fab fa-safari"></i> designed using Bootstrap 4.0, hosted on <i class="fab fa-github"></i>. Boldstrap template by <a class="class2" href="https://bootstrap.themes.guide/boldstrap/" target="_blank">Themes.guide</a>. Source code available <a class="class2" href="https://github.com/marcusdgriff/3dplantphenomics" target="_blank">here</a></small> <!--/row-->
+      </footer>
+    </div>
+  </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js">
+  </script> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script> 
+  <script src="scripts.js">
+  </script>
 </body>
 </html>

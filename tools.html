@@ -1,236 +1,285 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3DPlantPhenomics.org</title>
-    <meta name="description" content="Plant Phenotyping 3D Printing metaverse" />
-    <meta name="generator" content="Plant Phenotyping 3D Printing metaverse">
-    <link rel="icon" href="https://themes.guide/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="https://themes.guide/favicon.ico" type="image/x-icon" />
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ThemesGuide">
-    <meta name="twitter:creator" content="@ThemesGuide">
-    <meta name="twitter:title" content="3D Print Metaverse for Plant Phenomics">
-    <meta name="twitter:description" content="Repository for downloadable 3D models for assisting plant research">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
-    <link href="./theme.css" rel="stylesheet">
-    <link href="./template.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3c7811dab3.js" crossorigin="anonymous"></script>
-  </head>
-
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>3DPlantPhenomics.org</title>
+  <meta content="Plant Phenotyping 3D Printing metaverse" name="description">
+  <meta content="Plant Phenotyping 3D Printing metaverse" name="generator">
+  <link href="https://themes.guide/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://themes.guide/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="@ThemesGuide" name="twitter:site">
+  <meta content="@ThemesGuide" name="twitter:creator">
+  <meta content="3D Print Metaverse for Plant Phenomics" name="twitter:title">
+  <meta content="Repository for downloadable 3D models for assisting plant research" name="twitter:description">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
+  <link href="./theme.css" rel="stylesheet">
+  <link href="./template.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3c7811dab3.js">
+  </script>
   <script>
-function myFunction() {
-  var src, input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase().trim().split(' ');
-  table = document.getElementById("myTable");
-  for (j = 0; j < filter.length; j++) {
-    tr = table.getElementsByTagName("tr");
-    src = filter[j].trim();
-    for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[1];
-      td1 = tr[i].getElementsByTagName("td")[2];
-      td2 = tr[i].getElementsByTagName("td")[3];
-      if (src!='' && td && td2) {
-        txtValue = td.textContent || td.innerText;
-        txtValue1 = td1.textContent || td1.innerText;
-        txtValue2 = td2.textContent || td2.innerText;
-        if (txtValue.toUpperCase().indexOf(src) > -1  || txtValue1.toUpperCase().indexOf(src) > -1 || txtValue2.toUpperCase().indexOf(src) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }       
-    }
+  function myFunction() {
+   var src, input, filter, table, tr, td, i, txtValue;
+   input = document.getElementById("myInput");
+   filter = input.value.toUpperCase().trim().split(' ');
+   table = document.getElementById("myTable");
+   for (j = 0; j < filter.length; j++) {
+     tr = table.getElementsByTagName("tr");
+     src = filter[j].trim();
+     for (i = 0; i < tr.length; i++) {
+       td = tr[i].getElementsByTagName("td")[1];
+       td1 = tr[i].getElementsByTagName("td")[2];
+       td2 = tr[i].getElementsByTagName("td")[3];
+       if (src!='' && td && td2) {
+         txtValue = td.textContent || td.innerText;
+         txtValue1 = td1.textContent || td1.innerText;
+         txtValue2 = td2.textContent || td2.innerText;
+         if (txtValue.toUpperCase().indexOf(src) > -1  || txtValue1.toUpperCase().indexOf(src) > -1 || txtValue2.toUpperCase().indexOf(src) > -1) {
+           tr[i].style.display = "";
+         } else {
+           tr[i].style.display = "none";
+         }
+       }       
+     }
+   }
   }
-}
-</script>
-  
-  <body data-spy="scroll" data-target="#navbar1" data-offset="60">
-    <header class="bg-primary">
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-12">
-                    <div class="text-center m-0 vh-30 d-flex flex-column justify-content-center text-light">
-                        <h1 class="display-6">/h1>
-                        <p></p>
-                        <p class="lead">Submit your 3D models or recommend one to be added</p>
-                        <div class="row">
-                                  </div>
-                                </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </script>
+</head>
+<body data-offset="60" data-spy="scroll" data-target="#navbar1">
+  <header class="bg-primary">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12">
+          <div class="text-center m-0 vh-30 d-flex flex-column justify-content-center text-light">
+            <h1 class="display-6">/h1&gt;</h1>
+            <p></p>
+            <p class="lead">Submit your 3D models or recommend one to be added</p>
+            <div class="row"></div>
+          </div>
         </div>
-    </header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
-        <div class="container">
-            <a class="navbar-brand mr-1 mb-1 mt-0" href="index.html">3DPlantPhenomics.org</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
-                <ul class="navbar-nav">
-                    
-                        </a>
-                  
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tools.html">Phenotyping tools</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="systems.html">Plant growth systems</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="outreach.html">Outreach</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="modeling.html">Modeling/Analysis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="guide.html">3D printing guide</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="form.html">Submit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cite.html">Cite us</a>
-                    </li>
-
-
-                    </li>
-                </ul>
-            </div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
+    <div class="container">
+      <a class="navbar-brand mr-1 mb-1 mt-0" href="index.html">3DPlantPhenomics.org</a> <button class="navbar-toggler" data-target="#collapsingNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
+        <ul class="navbar-nav"></ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="tools.html">Phenotyping tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="systems.html">Plant growth systems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="outreach.html">Outreach</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modeling.html">Modeling/Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guide.html">3D printing guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Submit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cite.html">Cite us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="container pb-5" id="cards">
+      <div class="d-flex my-3">
+        <div class="jumbotron w-100 py-5 mx-auto">
+          <h1>3D print tools for plant phenotyping</h1>
+          <p class="lead">Browse the repository below.</p>
+          <p></p><input id="myInput" onkeyup="myFunction()" placeholder="Type here to filter the list..." type="text">
+          <table id="myTable">
+            <tr class="header">
+              <th style="width:25%;">Model preview</th>
+              <th style="width:35%;">Model name</th>
+              <th style="width:20%;">File type</th>
+              <th style="width:20%;">Contributor</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/thermal-imager-sb.html"><img alt="The Thermal Imager is a simple linear robot designed to position a thermal camera (FLIR A35 (60 Hz)) over the canopies of plants grown in trays or pots on a standard controlled environment room shelf Stuart Bagley" src="images/thermal-imager-sb.png" style="border:3px solid teal;" width="50%"></a>
+              </td>
+              <td>
+                <a href="repository/thermal-imager-sb.html">Plant thermal imager carriage</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Stuart Bagley</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/plate-imager-sb.html"><img alt="Plate Imager is designed for the automated high-throughput imaging of plate-grown plants Stuart Bagley" src="images/plate-imager-sb.png" style="border:3px solid teal;" width="50%"></a>
+              </td>
+              <td>
+                <a href="repository/plate-imager-sb.html">Plant plate imager carriage</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Stuart Bagley</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/root-mold1-jaa.html"><img alt="Root anatomy mold 3d print Jon Atkinson" src="images/root-mold1-jon-atkinson.png" style="border:3px solid teal;" width="50%"></a>
+              </td>
+              <td>
+                <a href="repository/root-mold1-jaa.html">Plant root sectioning holder</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Jonathan A Atkinson</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/chlorophyll-fluorescence-laura-mcausland.html"><img alt="Chlorophyll fluorescence imager Lorna McAusland" src="images/chlorophyll-fluorescence-lm.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/chlorophyll-fluorescence-laura-mcausland.html">Chlorophyll fluorescence imager</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Lorna McAusland</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/enroot-marie-arnaud.html"><img alt="EnRoot 3D-printable minirhizotron Marie Arnaud" src="images/enroot-ma.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/enroot-marie-arnaud.html">EnRoot 3D-printable minirhizotron</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Marie Arnaud</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/vacuum-seed-rb.html"><img alt="Vacuum seed sowing manifold Richard Barker" src="images/vacuum-seed-rb.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/vacuum-seed-rb.html">Vacuum seed sowing manifold</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Richard Barker</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/petridish-adapter-xy.html"><img alt="Petridish adapter xy Kaori Sakai" src="images/petridish-adapter-xy.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/petridish-adapter-xy.html">Petridish adapter xy microscope</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Kaori Sakai</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="repository/hyperscanner-mrlien.html"><img alt="Hyperscanner Max R Lien" src="images/hyperscanner-mrlien.png" style="border:3px solid teal;" width="50%">
+                <p class="lead"></p></a>
+              </td>
+              <td>
+                <a href="repository/hyperscanner-mrlien.html">HyperScanner hyperspectral reflectance-based imaging system</a>
+              </td>
+              <td>
+                .STL
+                <p><span class="badge badge-primary">Print optimized model</span></p>
+              </td>
+              <td>Max R Lien</td>
+            </tr>
+          </table>
+          <p></p>If you know a model that is not listed on this repository, please fill out the form at the link below.
+          <p></p>
+          <p></p>
         </div>
-    </nav> 
-    <main>
-        <section id="cards" class="container pb-5">
-            <div class="d-flex my-3">
-                <div class="jumbotron w-100 py-5 mx-auto">
-                    <h1>3D print tools for plant phenotyping</h1>
-                    <p class="lead">
-                        Browse the repository below.
-                        <p></p>
-
-                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type here to filter the list...">
-
-<table id="myTable">
-  <tr class="header">
-    <th style="width:25%;">Model preview</th>
-    <th style="width:35%;">Model name</th>
-    <th style="width:20%;">File type</th>
-    <th style="width:20%;">Contributor</th>
-   </tr>
-  <tr>
-    <td><a href="repository/thermal-imager-sb.html"> <img style="border:3px solid teal;" src="images/thermal-imager-sb.png" width="50%" alt="The Thermal Imager is a simple linear robot designed to position a thermal camera (FLIR A35 (60 Hz)) over the canopies of plants grown in trays or pots on a standard controlled environment room shelf Stuart Bagley" /></td>
-    <td><a href="repository/thermal-imager-sb.html">Plant thermal imager carriage</a></td>
-    <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-    <td>Stuart Bagley</td>
-  </tr>
-  <tr>
-    <td><a href="repository/plate-imager-sb.html"> <img style="border:3px solid teal;" src="images/plate-imager-sb.png" width="50%" alt="Plate Imager is designed for the automated high-throughput imaging of plate-grown plants Stuart Bagley" /></td>
-    <td><a href="repository/plate-imager-sb.html">Plant plate imager carriage</a></td>
-    <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-    <td>Stuart Bagley</td>
-  </tr>
-  <tr>
-    <td><a href="repository/root-mold1-jaa.html"> <img style="border:3px solid teal;" src="images/root-mold1-jon-atkinson.png" width="50%" alt="Root anatomy mold 3d print Jon Atkinson" /></td>
-    <td><a href="repository/root-mold1-jaa.html">Plant root sectioning holder</a></td>
-    <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-    <td>Jonathan A Atkinson</td>
-  </tr>
-  <tr>
-      <td><a href="repository/chlorophyll-fluorescence-laura-mcausland.html"> <img style="border:3px solid teal;" src="images/chlorophyll-fluorescence-lm.png" width="50%" alt="Chlorophyll fluorescence imager Lorna McAusland" />
-    <p class="lead"></td>
-      <td><a href="repository/chlorophyll-fluorescence-laura-mcausland.html">Chlorophyll fluorescence imager</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Lorna McAusland</td>
-  </tr>
-   <tr>
-      <td><a href="repository/enroot-marie-arnaud.html"> <img style="border:3px solid teal;" src="images/enroot-ma.png" width="50%" alt="EnRoot 3D-printable minirhizotron Marie Arnaud" />
-    <p class="lead"></td>
-      <td><a href="repository/enroot-marie-arnaud.html">EnRoot 3D-printable minirhizotron</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Marie Arnaud</td>
-  </tr>
-     <tr>
-      <td><a href="repository/vacuum-seed-rb.html"> <img style="border:3px solid teal;" src="images/vacuum-seed-rb.png" width="50%" alt="Vacuum seed sowing manifold Richard Barker" />
-    <p class="lead"></td>
-      <td><a href="repository/vacuum-seed-rb.html">Vacuum seed sowing manifold</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Richard Barker</td>
-  </tr>
-     <tr>
-      <td><a href="repository/petridish-adapter-xy.html"> <img style="border:3px solid teal;" src="images/petridish-adapter-xy.png" width="50%" alt="Petridish adapter xy Kaori Sakai" />
-    <p class="lead"></td>
-      <td><a href="repository/petridish-adapter-xy.html">Petridish adapter xy microscope</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Kaori Sakai</td>
-  </tr>
-       <tr>
-      <td><a href="repository/hyperscanner-mrlien.html"> <img style="border:3px solid teal;" src="images/hyperscanner-mrlien.png" width="50%" alt="Hyperscanner Max R Lien" />
-    <p class="lead"></td>
-      <td><a href="repository/hyperscanner-mrlien.html">HyperScanner hyperspectral reflectance-based imaging system</td>
-      <td>.STL <p> <span class="badge badge-primary">Print optimized model</span></td>
-      <td>Max R Lien</td>
-  </tr>
-
-</table>
-
-
-                        <p></p>
-                        If you know a model that is not listed on this repository, please fill out the form at the link below.
-                        <p></p>
-
-
-                    </p>
-                </div>
-            </div>
-    </main>
-      <footer id="footer" class="bg-dark text-light py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-6 col-md-6 col-lg-3 mb-2">
-                    <h6 class="text-uppercase">3D print repository</h6>
-                    <ul class="nav flex-column">
-                        <li><a class="text-white" target="ext" rel="nofollow" href="tools.html">Phenotyping tools</a></li>
-                        <li><a class="text-white" target="ext" rel="nofollow" href="systems.html">Plant growth systems</a></li>
-                        <li><a class="text-white" target="ext" rel="nofollow" href="outreach.html">Outreach</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 mb-2">
-                    <h6 class="text-uppercase">More</h6>
-                    <ul class="nav flex-column">
-                        <li><a class="text-white" target="_new" href="guide.html">3D printing guide</a></li>
-                        <li><a class="text-white" target="_new" href="form.html">Submit</a></li>
-                        <li><a class="text-white" target="_new" href="form.html">Service</a></li>
-                        <li><a class="text-white" target="_new" href="cite.html">Cite us</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6 mb-2 text-right">
-                    <h6 class="text-uppercase">Follow</h6>
-                    <ul class="nav float-right">
-                        <li><a class="text-white mr-2" rel="nofollow" href="https://twitter.com/3dplantphenom" title="Follow on Twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
-                        <li><a class="text-white mr" rel="nofollow" href="https://github.com/marcusdgriff" title="Follow on GitHub"><i class="fab fa-github fa-2x"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <footer class="footer text-center pt-2 pb-5">
-                <small class="copyright"><i class="fab fa-safari"></i>  designed using Bootstrap 4.0, hosted on <i class="fab fa-github"></i>. Boldstrap template by <a href="https://bootstrap.themes.guide/boldstrap/" target="_blank" class="class2">Themes.guide</a>. Source code available <a href="https://github.com/marcusdgriff/3dplantphenomics" target="_blank" class="class2">here</a></small>
-            <!--/row-->
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-light py-5" id="footer">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-6 col-md-6 col-lg-3 mb-2">
+          <h6 class="text-uppercase">3D print repository</h6>
+          <ul class="nav flex-column">
+            <li>
+              <a class="text-white" href="tools.html" rel="nofollow" target="ext">Phenotyping tools</a>
+            </li>
+            <li>
+              <a class="text-white" href="systems.html" rel="nofollow" target="ext">Plant growth systems</a>
+            </li>
+            <li>
+              <a class="text-white" href="outreach.html" rel="nofollow" target="ext">Outreach</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+        <div class="col-6 col-md-6 col-lg-3 mb-2">
+          <h6 class="text-uppercase">More</h6>
+          <ul class="nav flex-column">
+            <li>
+              <a class="text-white" href="guide.html" target="_new">3D printing guide</a>
+            </li>
+            <li>
+              <a class="text-white" href="form.html" target="_new">Submit</a>
+            </li>
+            <li>
+              <a class="text-white" href="form.html" target="_new">Service</a>
+            </li>
+            <li>
+              <a class="text-white" href="cite.html" target="_new">Cite us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 mb-2 text-right">
+          <h6 class="text-uppercase">Follow</h6>
+          <ul class="nav float-right">
+            <li>
+              <a class="text-white mr-2" href="https://twitter.com/3dplantphenom" rel="nofollow" title="Follow on Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a class="text-white mr" href="https://github.com/marcusdgriff" rel="nofollow" title="Follow on GitHub"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer text-center pt-2 pb-5">
+        <small class="copyright"><i class="fab fa-safari"></i> designed using Bootstrap 4.0, hosted on <i class="fab fa-github"></i>. Boldstrap template by <a class="class2" href="https://bootstrap.themes.guide/boldstrap/" target="_blank">Themes.guide</a>. Source code available <a class="class2" href="https://github.com/marcusdgriff/3dplantphenomics" target="_blank">here</a></small> <!--/row-->
+      </footer>
+    </div>
+  </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js">
+  </script> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script> 
+  <script src="scripts.js">
+  </script>
 </body>
 </html>
